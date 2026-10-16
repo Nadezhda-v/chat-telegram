@@ -5,9 +5,7 @@ export interface CredentialsInputModel {
   idInstance: string;
   apiTokenInstance: string;
   showToken: boolean;
-  /** Оба поля заполнены (без учёта пробелов). */
   isFilled: boolean;
-  /** Возвращает нормализованные учётные данные. */
   getCredentials: () => Credentials;
   handleIdInstanceChange: (event: ChangeEvent<HTMLInputElement>) => void;
   handleApiTokenChange: (event: ChangeEvent<HTMLInputElement>) => void;
@@ -16,7 +14,6 @@ export interface CredentialsInputModel {
 
 /**
  * Управляет полями ввода токенов: значения, показ/скрытие токена.
- * Ничего не знает про сеть и submit — только состояние формы.
  */
 export function useCredentialsInput(): CredentialsInputModel {
   const [idInstance, setIdInstance] = useState('');

@@ -1,13 +1,11 @@
-import { Button } from '@/shared/ui/Button/Button'
-import { Spinner } from '@/shared/ui/Spinner/Spinner'
-import { useCredentialsInput } from '@/features/auth/model/useCredentialsInput'
-import { useLoginForm } from '@/features/auth/model/useLoginForm'
-import { IdInstanceField } from '@/features/auth/ui/IdInstanceField/IdInstanceField'
-import { ApiTokenField } from '@/features/auth/ui/ApiTokenField/ApiTokenField'
-import './LoginForm.scss'
+import { Button, Spinner } from '@/shared/ui';
+import { useCredentialsInput } from '@/features/auth/model/useCredentialsInput';
+import { useLoginForm } from '@/features/auth/model/useLoginForm';
+import { ApiTokenField, IdInstanceField } from '@/features/auth/ui';
+import './LoginForm.scss';
 
 export const LoginForm = () => {
-  const credentialsInput = useCredentialsInput()
+  const credentialsInput = useCredentialsInput();
   const {
     idInstance,
     apiTokenInstance,
@@ -15,9 +13,9 @@ export const LoginForm = () => {
     handleIdInstanceChange,
     handleApiTokenChange,
     toggleShowToken,
-  } = credentialsInput
+  } = credentialsInput;
 
-  const { isLoading, error, canSubmit, handleSubmit } = useLoginForm(credentialsInput)
+  const { isLoading, error, canSubmit, handleSubmit } = useLoginForm(credentialsInput);
 
   return (
     <form className='login-form' onSubmit={handleSubmit}>

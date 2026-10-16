@@ -1,9 +1,9 @@
-import { MessageBubble } from '@/entities/message/ui/MessageBubble/MessageBubble';
-import { BackIcon } from '@/shared/icons/BackIcon/BackIcon';
-import { Avatar } from '@/shared/ui/Avatar/Avatar';
+import { MessageBubble } from '@/entities/message/ui/MessageBubble';
+import { BackIcon } from '@/shared/icons';
+import { Avatar } from '@/shared/ui';
 import { groupMessagesByDay } from '@/shared/lib/time';
 import { formatPhone } from '@/shared/lib/phone';
-import { MessageInput } from '@/widgets/MessageInput/ui/MessageInput/MessageInput';
+import { MessageInput } from '@/widgets/MessageInput/ui';
 import { ChatWindowProps } from './ChatWindow.types';
 import { ChatWindowEmpty } from '../ChatWindowEmpty/ChatWindowEmpty';
 import { useScrollToBottom } from '../../lib/useScrollToBottom';

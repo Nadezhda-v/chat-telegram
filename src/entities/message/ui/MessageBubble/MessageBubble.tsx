@@ -2,12 +2,14 @@ import { memo } from 'react';
 import { cn } from '@/shared/lib/utils';
 import { formatMessageTime } from '@/shared/lib/time';
 import { MessageBubbleProps } from './MessageBubble.types';
-import { STATUS_LABEL } from './MessageBubble.constants';
+import { STATUS_ICON } from './MessageBubble.constants';
 import './MessageBubble.scss';
 
 export const MessageBubble = memo(function MessageBubble({
   message,
 }: MessageBubbleProps) {
+  const StatusIcon = STATUS_ICON[message.status];
+
   return (
     <div
       className={cn(
@@ -30,7 +32,7 @@ export const MessageBubble = memo(function MessageBubble({
             )}
             title={message.status === 'failed' ? 'Не отправлено' : undefined}
           >
-            {STATUS_LABEL[message.status]}
+            <StatusIcon />
           </span>
         )}
       </span>

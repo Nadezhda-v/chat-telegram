@@ -17,6 +17,7 @@ export async function getStateInstance(
       `/getStateInstance/${credentials.apiTokenInstance}`,
       { signal },
     );
+
     return data;
   } catch (error) {
     throw toGreenApiError(error);

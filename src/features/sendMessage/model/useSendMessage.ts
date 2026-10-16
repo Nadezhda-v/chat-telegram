@@ -20,9 +20,7 @@ export const useSendMessage = () => {
   const sendMessage = useCallback(
     async (chatId: string, text: string): Promise<boolean> => {
       const trimmed = text.trim();
-      if (!trimmed || !credentials) {
-        return false;
-      }
+      if (!trimmed || !credentials) return false;
 
       const localId = createLocalId();
 

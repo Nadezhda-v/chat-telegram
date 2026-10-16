@@ -1,0 +1,1 @@
+export { ChatWindowEmpty } from './ChatWindowEmpty';

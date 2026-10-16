@@ -1,5 +1,5 @@
-import { Input } from '@/shared/ui/Input/Input'
-import { IdInstanceFieldProps } from './IdInstanceField.types'
+import { Input } from '@/shared/ui';
+import { IdInstanceFieldProps } from './IdInstanceField.types';
 
 export const IdInstanceField = ({ value, disabled = false, onChange }: IdInstanceFieldProps) => {
   return (

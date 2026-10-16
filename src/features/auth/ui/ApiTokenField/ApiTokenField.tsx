@@ -1,5 +1,5 @@
-import { Input } from '@/shared/ui/Input/Input'
-import { ApiTokenFieldProps } from './ApiTokenField.types'
+import { Input } from '@/shared/ui';
+import { ApiTokenFieldProps } from './ApiTokenField.types';
 
 export const ApiTokenField = ({
   value,

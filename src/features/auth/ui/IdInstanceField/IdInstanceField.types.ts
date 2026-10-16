@@ -1,7 +1,7 @@
-import type { ChangeEvent } from 'react'
+import type { ChangeEvent } from 'react';
 
 export interface IdInstanceFieldProps {
-  value: string
-  disabled?: boolean
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void
+  value: string;
+  disabled?: boolean;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }

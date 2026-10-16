@@ -13,8 +13,7 @@ export interface LoginFormState {
 
 /**
  * Логика отправки формы авторизации: проверка учётных данных через GREEN API
- * и сохранение их в сессии. Состоянием полей управляет `useCredentialsInput`,
- * чья модель передаётся аргументом (композиция хуков в компоненте).
+ * и сохранение их в сессии.
  */
 export function useLoginForm(input: CredentialsInputModel): LoginFormState {
   const { setCredentials } = useAuth();
@@ -29,9 +28,7 @@ export function useLoginForm(input: CredentialsInputModel): LoginFormState {
     async (event: FormEvent<HTMLFormElement>): Promise<void> => {
       event.preventDefault();
 
-      if (!isFilled || isLoading) {
-        return;
-      }
+      if (!isFilled || isLoading) return;
 
       setError(null);
       setIsLoading(true);

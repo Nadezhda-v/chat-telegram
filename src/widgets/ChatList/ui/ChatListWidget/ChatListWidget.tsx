@@ -1,5 +1,5 @@
 import { useChatStore } from '@/entities/chat/model/store';
-import { ChatListItem } from '@/entities/chat/ui/ChatListItem/ChatListItem';
+import { ChatListItem } from '@/entities/chat/ui/ChatListItem';
 import { CreateChatForm } from '@/features/createChat/ui/CreateChatForm';
 import { cn } from '@/shared/lib/utils';
 import { ChatListWidgetProps } from './ChatListWidget.types';

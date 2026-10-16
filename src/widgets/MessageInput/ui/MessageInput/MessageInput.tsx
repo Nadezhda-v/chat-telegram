@@ -1,6 +1,6 @@
 import { type ChangeEvent, type KeyboardEvent } from 'react';
 import { useSendMessage } from '@/features/sendMessage/model/useSendMessage';
-import { SendIcon } from '@/shared/icons/SendIcon/SendIcon';
+import { SendIcon } from '@/shared/icons';
 import { cn } from '@/shared/lib/utils';
 import { useMessageInput } from '../../lib/useMessageInput';
 import { MessageInputProps } from './MessageInput.types';

@@ -1,6 +1,6 @@
 
-import { ChatListWidget } from '@/widgets/ChatList/ui/ChatListWidget/ChatListWidget';
-import { ChatWindow } from '@/widgets/ChatWindow/ui/ChatWindow/ChatWindow';
+import { ChatListWidget } from '@/widgets/ChatList/ui/ChatListWidget';
+import { ChatWindow } from '@/widgets/ChatWindow/ui/ChatWindow';
 
 import { cn } from '@/shared/lib/utils';
 import { useChatPage } from '../model/useChatPage';

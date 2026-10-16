@@ -5,9 +5,7 @@ import { STORAGE_KEY } from '@/shared/config/constants';
 function readCredentials(): Credentials | null {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      return null;
-    }
+    if (!raw) return null;
 
     const parsed = JSON.parse(raw) as Partial<Credentials>;
     if (parsed.idInstance && parsed.apiTokenInstance) {

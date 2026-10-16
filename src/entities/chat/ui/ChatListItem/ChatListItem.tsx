@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Avatar } from '@/shared/ui/Avatar/Avatar';
+import { Avatar } from '@/shared/ui';
 import { cn } from '@/shared/lib/utils';
 import { formatMessageTime } from '@/shared/lib/time';
 import { ChatListItemProps } from './ChatListItem.types';

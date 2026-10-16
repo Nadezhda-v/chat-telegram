@@ -1,6 +1,5 @@
 
-import { Button } from '@/shared/ui/Button/Button';
-import { Input } from '@/shared/ui/Input/Input';
+import { Button, Input } from '@/shared/ui';
 import { CreateChatFormProps } from './CreateChatForm.types';
 import { useCreateChat } from '../model/useCreateChat';
 import './CreateChatForm.scss';
