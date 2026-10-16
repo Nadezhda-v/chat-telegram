@@ -1,0 +1,89 @@
+.chat-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--tg-text);
+  transition: background-color 0.12s ease;
+
+  &:hover {
+    background-color: var(--tg-sidebar-hover);
+  }
+
+  &--active {
+    background-color: var(--tg-accent);
+    color: #fff;
+
+    .chat-list-item__preview,
+    .chat-list-item__time {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .chat-list-item__badge {
+      background-color: #fff;
+      color: var(--tg-accent);
+    }
+
+    &:hover {
+      background-color: var(--tg-accent);
+    }
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__time {
+    font-size: 12px;
+    color: var(--tg-text-secondary);
+    flex-shrink: 0;
+  }
+
+  &__preview {
+    font-size: 13px;
+    color: var(--tg-text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__badge {
+    flex-shrink: 0;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 10px;
+    background-color: var(--tg-accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

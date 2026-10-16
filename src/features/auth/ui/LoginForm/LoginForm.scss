@@ -1,0 +1,48 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--tg-text-secondary);
+  }
+
+  &__token {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .input {
+      padding-right: 84px;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    right: 8px;
+    border: none;
+    background: transparent;
+    color: var(--tg-accent);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  &__error {
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: rgba(224, 72, 72, 0.1);
+    color: var(--tg-danger);
+    font-size: 13px;
+  }
+}

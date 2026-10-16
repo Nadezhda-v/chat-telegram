@@ -1,0 +1,28 @@
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--tg-border);
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  color: var(--tg-text);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &::placeholder {
+    color: var(--tg-text-secondary);
+  }
+
+  &:focus {
+    border-color: var(--tg-accent);
+    box-shadow: 0 0 0 2px rgba(51, 144, 236, 0.15);
+  }
+
+  &--invalid {
+    border-color: var(--tg-danger);
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(224, 72, 72, 0.15);
+    }
+  }
+}

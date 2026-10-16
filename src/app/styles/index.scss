@@ -1,0 +1,65 @@
+:root {
+  --tg-bg: #e6ebee;
+  --tg-panel: #ffffff;
+  --tg-panel-secondary: #f0f2f5;
+  --tg-panel-secondary-hover: #e3e6ea;
+  --tg-sidebar: #ffffff;
+  --tg-sidebar-hover: #f4f4f5;
+
+  --tg-accent: #3390ec;
+  --tg-accent-hover: #2b7fd4;
+
+  --tg-out-bubble: #eeffde;
+  --tg-in-bubble: #ffffff;
+
+  --tg-text: #0f0f0f;
+  --tg-text-secondary: #707579;
+  --tg-border: #e6e6e6;
+  --tg-danger: #e04848;
+  --tg-online: #4fae4e;
+  --tg-out-status: #4fae4e;
+
+  --tg-chat-bg: #d9e2e8;
+  --tg-chat-empty: #d9e2e8;
+  --tg-chat-pattern: radial-gradient(rgba(255, 255, 255, 0.35) 1.5px, transparent 1.5px);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+  font-size: 14px;
+  color: var(--tg-text);
+  background-color: var(--tg-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

@@ -1,0 +1,9 @@
+.create-chat {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+
+  .input {
+    flex: 1;
+  }
+}

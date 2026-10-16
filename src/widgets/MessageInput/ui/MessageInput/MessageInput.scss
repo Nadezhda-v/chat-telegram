@@ -1,0 +1,53 @@
+.message-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px 16px;
+  background-color: var(--tg-panel);
+  border-top: 1px solid var(--tg-border);
+
+  &__field {
+    flex: 1;
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 8px 0;
+    max-height: 140px;
+    color: var(--tg-text);
+
+    &::placeholder {
+      color: var(--tg-text-secondary);
+    }
+  }
+
+  &__send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--tg-text-secondary);
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    flex-shrink: 0;
+
+    &--enabled {
+      color: var(--tg-accent);
+    }
+
+    &--enabled:hover {
+      background-color: var(--tg-panel-secondary);
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+}
