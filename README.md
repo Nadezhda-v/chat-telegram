@@ -7,7 +7,7 @@
 
 **React 18**, **TypeScript**, **SCSS**, **Axios**, **Zustand**, **Vite**
 
-## Быстрый старт
+## Локальный запуск
 
 ```bash
 git clone https://github.com/Nadezhda-v/chat-telegram.git
