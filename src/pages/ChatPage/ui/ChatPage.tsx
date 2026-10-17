@@ -1,6 +1,6 @@
-
-import { ChatListWidget } from '@/widgets/ChatList/ui/ChatListWidget';
-import { ChatWindow } from '@/widgets/ChatWindow/ui/ChatWindow';
+﻿
+import { ChatListWidget } from '@/widgets/ChatList/ui';
+import { ChatWindow } from '@/widgets/ChatWindow/ui';
 
 import { cn } from '@/shared/lib/utils';
 import { useChatPage } from '../model/useChatPage';
@@ -36,3 +36,4 @@ export function ChatPage() {
     </div>
   );
 }
+
